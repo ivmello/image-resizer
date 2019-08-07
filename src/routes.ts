@@ -1,13 +1,12 @@
 import { Router } from 'express'
 
-import UserController from './controllers/UserController'
+import ResizerController from './controllers/ResizerController'
 
 const routes = Router()
 
 /**
  * Users
  */
-routes.get('/users', UserController.index)
-routes.post('/users', UserController.store)
+routes.get('/', ResizerController.index)
 
 export default routes
